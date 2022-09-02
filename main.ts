@@ -150,3 +150,7 @@ controller.moveSprite(DUCK)
 scene.cameraFollowSprite(DUCK)
 current_level = 0
 create_whole_game()
+forever(function () {
+    music.playMelody("G B A G C5 B A B ", 120)
+    music.playMelody("A F E F D G E F ", 120)
+})
