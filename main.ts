@@ -40,7 +40,10 @@ function create_whole_game () {
         tiles.setCurrentTilemap(tilemap`level9`)
         tiles.placeOnRandomTile(DUCK, sprites.dungeon.stairLarge)
     } else {
-        game.over(true)
+        if (info.score() == 60) {
+            game.over(true)
+        }
+        game.over(false)
     }
 }
 function make_enemies () {
